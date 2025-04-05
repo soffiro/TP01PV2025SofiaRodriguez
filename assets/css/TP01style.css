@@ -1,0 +1,135 @@
+body {
+    font-family: 'Lora', serif;
+    background-color: #f0e8de;
+    color: #333;
+    margin: 0;
+    padding: 20px ;
+}
+
+h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #954e5f;
+}
+
+h2 {
+    background: #d1c5b4;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    font-family: 'Playfair Display', serif;
+
+}
+
+header {
+    background: #954e5f;
+    color: #f0e8de;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+p {
+    line-height: 1.6;
+}
+ 
+/*navegacion*/
+nav {
+    background: #282e51;
+    padding: 10px;
+}
+nav ul {    
+    padding: 0;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+}
+
+.general-nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.general-nav ul li {
+    display: inline;
+}
+
+.general-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3em; /* Tamaño de fuente más pequeño solo para el nav general */
+}
+
+.columnas-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;  
+    flex-wrap: wrap;  
+}
+
+.columnas-container section {
+    flex: 1;  
+    min-width: 300px;  
+    box-sizing: border-box;  
+    background: rgb(252, 247, 238);
+    padding: 20px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+img {
+    max-width: 100%;
+}
+/*contacto*/
+.contacto {
+    width: 50%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #B85C38;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #E1B07E;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #954e5f;
+    color: white;
+    margin-top: 20px;
+}
