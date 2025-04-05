@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="TP01style.css">
+    <link rel="stylesheet" href="assets/css/TP01style.css">
 </head>
 <body>
 
@@ -24,20 +24,45 @@
     <p>¿Tienes dudas sobre los museos, la historia o la cultura de Jujuy? ¡Envíanos tu mensaje!</p>
 
     <section class="contacto">
-        <form action="enviar.php" method="POST">
+        <form id="formulario">
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" placeholder="Tu correo" required>
+            <input type="text" id="nombre" name="nombre" required>
+        
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+        
+            <label for="telefono">Telefono</label>
+            <input type="text" id="telefono" required>
+        
             <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu consulta aqui..." required></textarea>
-
-            <button type="submit">Enviar</button>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        
+            <label for="pais">País:</label>
+            <select id="pais" name="pais" multiple>
+              <option value="ar">Argentina</option>
+              <option value="mx">México</option>
+              <option value="es">España</option>
+            </select>
+        
+            <button type="submit" onclick="enviarFormulario()">Enviar</button>
         </form>
     </section>
 </main>
-    
+<script>
+function enviarFormulario(){
+  
+  var apellido =document.getElementById("apellido").value;
+  var nombre = document.getElementById("nombre").value;
 
+  console.log("Nombre:",nombre);
+  console.log("Apellido.",apellido);
+}
+</script>
+<footer>
+    <p>&copy; 2025 - Todos los derechos reservados | Jujuy Tierra de Tradiciones</p>
+</footer>
 </body>
 </html>
